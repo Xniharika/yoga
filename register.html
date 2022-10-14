@@ -9,9 +9,9 @@
     <title>Document</title>
 </head>
 
-<body bgcolor="pink" text="black">
-    <table width="1000" align="center" bgcolor="hotpink" height="40">
-        <tr>
+<body bgcolor="white" text="black">
+    <table width="1000" align="center" bgcolor="#ffb3b3" height="40">
+        <tr align="center">
             <td><a href="index.html">Home</a></td>
             <td><a href="about.html">About</a></td>
             <td><a href="gallery.html">Gallery</a></td>
@@ -23,10 +23,10 @@
         </tr>
     </table>
 
-    <h1 align="center">Register</h1>
+    <h1 align="center">Register 📝</h1>
     <form action="thanks.html" method="get">
         <table align="center" width="1000">
-            <tr bgcolor="Plum" align="center">
+            <tr bgcolor="PaleTurquoise" align="center">
                 <td><label for="fname">Enter First Name</label></td>
                 <td><input type="text" name="fname" id="fname" required></td>
             </tr>
@@ -34,16 +34,52 @@
                 <td><label for="lname">Enter Last Name</label></td>
                 <td><input type="text" name="lname" id="lname"></td>
             </tr>
-            <tr bgcolor="mediumpurple" align="center">
+            <tr bgcolor="PaleTurquoise" align="center">
                 <td><label for="psw">Enter Password (max 10 chars)</label></td>
-                <td><input type="password" maxlength="10" id="lname"></td>
+                <td><input type="password" maxlength="10" id="lname" required></td>
             </tr>
-        <tr align="center">
-            <td><input type="submit"></td>
-            <td><input type="Reset"></td>
-        </tr>
-        
-    </table>
+            <tr align="center">
+                <td><label for="gender">Select Your Gender</label></td>
+                <td><input type="radio" name="gender" id="gender" value="Female" required> Female
+                    <input type="radio" name="gender" id="male" value="male" required> Male
+                </td>
+            </tr>
+            <tr bgcolor="PaleTurquoise" align="center">
+                <td><label for="newsletter">Subscribe our Newsletter </label></td>
+                <td><input type="checkbox" name="newsletter" id="newsletter" value="yes" checked></td>
+            </tr>
+            <tr align="center">
+                <td><label for="courses">Select the course you want to Register for:</label></td>
+                <td><select name="course" id="course" required>
+                        <option value="1">One Week Short Term</option>
+                        <option value="2" selected>One Month Program</option>
+                        <option value="3">One Year Diploma</option>
+                        <option value="4">Three Year Degree</option>
+                    </select>
+            </tr>
+            <tr bgcolor="PaleTurquoise" align="center">
+                <td><label for="dob">Select Your Date of Birth</label></td>
+                <td><input type="date" name="dob" id="dob"></td>
+            </tr>
+            <tr align="center">
+                <td><label for="photo">Upload Your Photograph</label></td>
+                <td><input type="file" name="photo" id="photo"></td>
+            </tr>
+            <tr bgcolor="PaleTurquoise" align="center">
+                <td><label for="reason">Why do you want to do this course? </label></td>
+                <td><textarea name="reason" id="reason" cols="20" rows="3"></textarea></td>
+            </tr>
+            <tr align="center">
+                <td><label for="mobile">Enter your Mobile Number</label></td>
+                <td><input type="number" name="quantity" id="quantity" min="6000000000" max="9999999999"></td>
+            </tr>
+            <tr align="center">
+                <td><input type="image" src="images/submit.png" width="100" height="40"></td>
+                <td><input type="Reset"></td>
+            </tr>
+
+
+        </table>
     </form>
 
 </body>
